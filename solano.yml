@@ -11,7 +11,7 @@ notify:
   trigger-on: failed
   branch: mas*er
   room: sandbox
-  message: "Congratulations, testing of %repo%'s %branch% branch <script>alert('xss');</script> finished"
+  message: "pr/123-updated"
 
 #plan:
 #  - first
@@ -44,21 +44,6 @@ profiles:
       - "exit 0"
     test_pattern:
       - spec/**_test.rb
-  d:
-    tests:
-      - "exit 0"
-    test_pattern:
-      - spec/**_test.rb
-  e:
-    tests:
-      - "exit 0"
-    test_pattern:
-      - spec/**_test.rb
-  f:
-    tests:
-      - "exit 0"
-    test_pattern:
-      - spec/**_test.rb
   g:
     tests:
       - "exit 0"
@@ -66,9 +51,5 @@ profiles:
       - spec/**_test.rb
 pipeline:
   a:
-    b:
-      - d
-      - e
     c:
-      - f
       - g
