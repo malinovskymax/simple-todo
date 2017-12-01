@@ -16,7 +16,6 @@ notify:
 plan:
   - first
   - second
-  - third
 profiles:
   first:
     test_pattern:
@@ -24,9 +23,6 @@ profiles:
   second:
     test_pattern:
       - spec/**_test.rb
-    test_exclude_pattern:
-      - spec/controllers/comments_controller_spec.rb
-      - spec/routing/root_route_spec.rb
   third:
     test_pattern:
       - spec/routing/root_route_spec.rb
