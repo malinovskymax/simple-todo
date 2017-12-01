@@ -69,4 +69,3 @@ pipeline:
     c:
       - f
       - g
-script: "exit 0"
