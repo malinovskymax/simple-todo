@@ -18,17 +18,17 @@ plan:
   - second
 profiles:
   first:
-    script: "/successful_test"
+    script: "/usr/local/repos/successful_test"
     test_pattern:
       - spec/controllers/comments_controller_spec.rb
   second:
-    script: "/successful_test"
+    script: "/usr/local/repos/successful_test"
     test_pattern:
       - spec/**/*_spec.rb
     test_exclude_pattern:
       - spec/controllers/comments_controller_spec.rb
   third:
-    script: "/successful_test"
+    script: "/usr/local/repos/successful_test"
     test_pattern:
       - spec/routing/root_route_spec.rb
 
