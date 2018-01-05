@@ -24,7 +24,8 @@ profiles:
   second:
     #script: "/usr/local/repos/successful_test"
     test_pattern:
-      - spec/**/*_spec.rb
+      #- spec/**/*_spec.rb
+      - spec/routing/root_route_spec.rb
     test_exclude_pattern:
       - spec/controllers/comments_controller_spec.rb
   third:
