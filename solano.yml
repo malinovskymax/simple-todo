@@ -16,6 +16,7 @@ notify:
 plan:
   - first
   - second
+  - third
 profiles:
   first:
     #script: "/usr/local/repos/successful_test"
@@ -31,7 +32,9 @@ profiles:
   third:
     #script: "/usr/local/repos/successful_test"
     test_pattern:
-      - spec/routing/root_route_spec.rb
+      - spec/features/tasks/editTaskText_spec.rb
+rerun_list:
+  - spec/features/tasks/editTaskText_spec.rb
 
 #profiles:
 #  a:
