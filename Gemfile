@@ -26,7 +26,7 @@ gem 'carrierwave'
 gem 'jc-validates_timeliness'
 
 group :development, :test do
-  gem 'spring'
+  gem 'simplecov'
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'capybara-screenshot'
