@@ -20,10 +20,10 @@ plan:
 profiles:
   first:
     #script: "/usr/local/repos/successful_test"
-    #coverage:
-      #version: 2
-      #enabled: true
-      #ratchet: 60
+    coverage:
+      version: 2
+      enabled: true
+      ratchet: 60
     test_pattern:
       - spec/controllers/comments_controller_spec.rb
   second:
