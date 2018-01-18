@@ -15,8 +15,8 @@ notify:
 
 plan:
   - first
-  - second
-  - third
+  #- second
+  #- third
 profiles:
   first:
     #script: "/usr/local/repos/successful_test"
