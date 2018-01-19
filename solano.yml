@@ -13,9 +13,9 @@ notify:
   room: sandbox
   message: "master branch"
 
-coverage:
-  version: 2
-  enabled: true
+#coverage:
+#  version: 2
+#  enabled: true
 
 plan:
   - first
