@@ -28,7 +28,7 @@ profiles:
     coverage:
       version: 2
       enabled: true
-      ratchet: 60
+      ratchet: 2
     test_pattern:
       - spec/controllers/comments_controller_spec.rb
   second:
