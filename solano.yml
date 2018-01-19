@@ -16,7 +16,7 @@ notify:
 coverage:
   version: 2
   enabled: true
-  ratchet: 1
+  ratchet: 40
 
 plan:
   - first
@@ -28,7 +28,7 @@ profiles:
     coverage:
       version: 2
       enabled: true
-      ratchet: 2
+      ratchet: 60
     test_pattern:
       - spec/controllers/comments_controller_spec.rb
   second:
