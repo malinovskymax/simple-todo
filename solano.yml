@@ -18,14 +18,11 @@ coverage:
   enabled: true
   ratchet: 40
 
-script: "/usr/local/repos/successful_test"
-
 plan:
   - first
   #- second
   #- third
 profiles:
-  script: "/usr/local/repos/successful_test"
   first:
     script: "/usr/local/repos/successful_test"
     #coverage:
@@ -34,19 +31,19 @@ profiles:
     #  ratchet: 60
     #test_pattern:
     #  - spec/controllers/comments_controller_spec.rb
-  second:
+  #second:
     #script: "/usr/local/repos/successful_test"
-    test_pattern:
+    #test_pattern:
       #- spec/**/*_spec.rb
-      - spec/routing/root_route_spec.rb
-    test_exclude_pattern:
-      - spec/controllers/comments_controller_spec.rb
-  third:
+      #- spec/routing/root_route_spec.rb
+    #test_exclude_pattern:
+      #- spec/controllers/comments_controller_spec.rb
+  #third:
     #script: "/usr/local/repos/successful_test"
-    test_pattern:
-      - spec/features/tasks/editTaskText_spec.rb
-rerun_list:
-  - spec/features/tasks/editTaskText_spec.rb
+    #test_pattern:
+      #- spec/features/tasks/editTaskText_spec.rb
+#rerun_list:
+  #- spec/features/tasks/editTaskText_spec.rb
 
 #profiles:
 #  a:
