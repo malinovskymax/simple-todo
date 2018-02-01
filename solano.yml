@@ -17,6 +17,8 @@ coverage:
   version: 2
   enabled: true
   ratchet: 40
+  
+script: "/usr/local/repos/successful_test"
 
 plan:
   - first
