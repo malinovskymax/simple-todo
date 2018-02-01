@@ -20,7 +20,7 @@ coverage:
 
 plan:
   - first
-  #- second
+  - second
   #- third
 profiles:
   first:
@@ -29,13 +29,13 @@ profiles:
     #  version: 2
     #  enabled: true
     #  ratchet: 60
-    #test_pattern:
-    #  - spec/controllers/comments_controller_spec.rb
-  #second:
+    test_pattern:
+      - spec/controllers/comments_controller_spec.rb
+  second:
     #script: "/usr/local/repos/successful_test"
-    #test_pattern:
+    test_pattern:
       #- spec/**/*_spec.rb
-      #- spec/routing/root_route_spec.rb
+      - spec/routing/root_route_spec.rb
     #test_exclude_pattern:
       #- spec/controllers/comments_controller_spec.rb
   #third:
