@@ -20,18 +20,17 @@ coverage:
 
 plan:
   - first
-  - second
+  #- second
   #- third
 profiles:
-  script: "/usr/local/repos/successful_test"
   first:
     script: "/usr/local/repos/successful_test"
     #coverage:
     #  version: 2
     #  enabled: true
     #  ratchet: 60
-    test_pattern:
-      - spec/controllers/comments_controller_spec.rb
+    #test_pattern:
+    #  - spec/controllers/comments_controller_spec.rb
   second:
     #script: "/usr/local/repos/successful_test"
     test_pattern:
