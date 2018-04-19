@@ -8,16 +8,16 @@ firefox: '31.0esr'
 
 plan:
   - default
-  #- second
+  - second
   #- third
 profiles:
   default:
     script: /usr/local/repos/successful_test
-    #test_pattern:
-    #  - spec/controllers/comments_controller_spec.rb
-  #second:
-  #  test_pattern:
-  #    - spec/routing/root_route_spec.rb
+    test_pattern:
+      - spec/controllers/comments_controller_spec.rb
+  second:
+    test_pattern:
+      - spec/routing/root_route_spec.rb
   #third:
     #script: "/usr/local/repos/successful_test"
     #test_pattern:
