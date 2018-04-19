@@ -23,6 +23,7 @@ plan:
   - second
   #- third
 profiles:
+  script: "/usr/local/repos/successful_test"
   first:
     script: "/usr/local/repos/successful_test"
     #coverage:
