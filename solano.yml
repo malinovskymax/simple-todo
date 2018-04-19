@@ -6,83 +6,19 @@ postgresql:
 
 firefox: '31.0esr'
 
-notify:
-- channel: hipchat
-  trigger-on: failed
-  branch: mas*er
-  room: sandbox
-  message: "master branch"
-
-coverage:
-  version: 2
-  enabled: true
-  ratchet: 40
-
 plan:
-  - first
+  - default
   #- second
   #- third
 profiles:
-  first:
-    script: "/usr/local/repos/successful_test"
-    #coverage:
-    #  version: 2
-    #  enabled: true
-    #  ratchet: 60
+  default:
+    script: /usr/local/repos/successful_test
     #test_pattern:
     #  - spec/controllers/comments_controller_spec.rb
-  second:
-    #script: "/usr/local/repos/successful_test"
-    test_pattern:
-      #- spec/**/*_spec.rb
-      - spec/routing/root_route_spec.rb
-    #test_exclude_pattern:
-      #- spec/controllers/comments_controller_spec.rb
+  #second:
+  #  test_pattern:
+  #    - spec/routing/root_route_spec.rb
   #third:
     #script: "/usr/local/repos/successful_test"
     #test_pattern:
       #- spec/features/tasks/editTaskText_spec.rb
-#rerun_list:
-  #- spec/features/tasks/editTaskText_spec.rb
-
-#profiles:
-#  a:
-#    tests:
-#      - "exit 0"
-#    test_pattern:
-#      - spec/**_test.rb
-#  b:
-#    tests:
-#      - "exit 0"
-#    test_pattern:
-#      - spec/**_test.rb
-#  c:
-#    tests:
-#      - "exit 0"
-#    test_pattern:
-#      - spec/**_test.rb
-#  d:
-#    tests:
-#      - "exit 0"
-#    test_pattern:
-#      - spec/**_test.rb
-#  e:
-#    tests:
-#      - "exit 0"
-#    test_pattern:
-#      - spec/**_test.rb
-#  f:
-#    tests:
-#      - "exit 0"
-#    test_pattern:
-#      - spec/**_test.rb
-#  g:
-#    tests:
-#      - "exit 0"
-#    test_pattern:
-#      - spec/**_test.rb
-#pipeline:
-#  a:
-#    c:
-#      - f
-#      - g
