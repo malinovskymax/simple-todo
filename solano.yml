@@ -17,17 +17,17 @@ plan:
 profiles:
   default:
     script: "exit 0"
-    coverage:
-      version: 2
-      enabled: true
-      ratchet: 60
-    test_pattern:
-      - spec/controllers/comments_controller_spec.rb
+    #coverage:
+    #  version: 2
+    #  enabled: true
+    #  ratchet: 60
+    #test_pattern:
+    #  - spec/controllers/comments_controller_spec.rb
   second:
     script: "exit 0"
-    test_pattern:
-      - spec/routing/root_route_spec.rb
+    #test_pattern:
+    #  - spec/routing/root_route_spec.rb
   third:
     script: "exit 0"
-    test_pattern:
-      - spec/features/tasks/editTaskText_spec.rb
+    #test_pattern:
+    #  - spec/features/tasks/editTaskText_spec.rb
