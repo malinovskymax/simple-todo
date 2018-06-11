@@ -12,8 +12,8 @@ coverage:
 
 plan:
   - default
-  #- second
-  #- third
+  - second
+  - third
 profiles:
   default:
     script: "/usr/local/repos/successful_test"
