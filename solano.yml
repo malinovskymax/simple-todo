@@ -12,7 +12,7 @@ coverage:
 
 pipeline:
   - default
-  #- second
+  - second
   #- third
 steps:
   default:
