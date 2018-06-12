@@ -16,7 +16,7 @@ plan:
   #- third
 profiles:
   default:
-    #script: "/usr/local/repos/successful_test"
+    script: "/usr/local/repos/successful_test"
     #coverage:
     #  version: 2
     #  enabled: true
