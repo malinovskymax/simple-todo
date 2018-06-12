@@ -10,7 +10,7 @@ coverage:
   version: 2
   enabled: true
 
-plan:
+pipeline:
   - default
   #- second
   #- third
