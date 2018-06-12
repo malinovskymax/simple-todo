@@ -11,7 +11,9 @@ coverage:
   enabled: true
 
 pipeline:
-  default: second
+  default:
+    second:
+      - third
 steps:
   default:
     script: "/usr/local/repos/successful_test"
