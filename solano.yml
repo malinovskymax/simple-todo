@@ -22,6 +22,7 @@ pipeline:
     eleven:
       - twelve
       - thirteen
+  fourteen: fifteen
 steps:
   default:
     script: "/usr/local/repos/successful_test"
@@ -58,4 +59,8 @@ steps:
   twelve:
     script: "/usr/local/repos/successful_test"
   thirteen:
+    script: "/usr/local/repos/successful_test"
+  fourteen:
+    script: "/usr/local/repos/successful_test"
+  fifteen:
     script: "/usr/local/repos/successful_test"
