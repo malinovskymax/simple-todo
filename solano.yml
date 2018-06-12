@@ -14,14 +14,14 @@ pipeline:
   default:
     second:
       - third
-    third: default
-    second:
-      default:
-        third: second
+    fifth: six
+    seventh:
+      eight:
+        nine: ten
   fourth:
-    default:
-      - third
-      - second
+    eleven:
+      - twelve
+      - thirteen
 steps:
   default:
     script: "/usr/local/repos/successful_test"
@@ -40,4 +40,22 @@ steps:
     test_pattern:
       - spec/features/tasks/editTaskText_spec.rb
   fourth:
+    script: "/usr/local/repos/successful_test"
+  fifth:
+    script: "/usr/local/repos/successful_test"
+  six:
+    script: "/usr/local/repos/successful_test"
+  seventh:
+    script: "/usr/local/repos/successful_test"
+  eight:
+    script: "/usr/local/repos/successful_test"
+  nine:
+    script: "/usr/local/repos/successful_test"
+  ten:
+    script: "/usr/local/repos/successful_test"
+  eleven:
+    script: "/usr/local/repos/successful_test"
+  twelve:
+    script: "/usr/local/repos/successful_test"
+  thirteen:
     script: "/usr/local/repos/successful_test"
