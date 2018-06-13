@@ -9,8 +9,12 @@ firefox: '31.0esr'
 coverage:
   version: 2
   enabled: true
+  
+inlusion: &inclusion
+  third: default
 
 pipeline:
+  <<: *inclusion
   default:
     second:
       - third
