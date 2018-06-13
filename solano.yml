@@ -11,18 +11,7 @@ coverage:
   enabled: true
 
 pipeline:
-  default:
-    second:
-      - third
-    fifth: six
-    seventh:
-      eight:
-        nine: ten
-  fourth:
-    eleven:
-      - twelve
-      - thirteen
-  fourteen: fifteen
+  default: second
   a:
     - b: e
     - c
