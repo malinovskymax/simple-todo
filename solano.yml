@@ -6,61 +6,19 @@ postgresql:
 
 firefox: '31.0esr'
 
-coverage:
-  version: 2
-  enabled: true
-
 pipeline:
-  default: second
-  a:
-    - b: e
-    - c
+  default:
+    second: third
 steps:
   default:
-    script: "/usr/local/repos/successful_test"
-    #coverage:
-    #  version: 2
-    #  enabled: true
-    #  ratchet: 60
+    #script: "/usr/local/repos/successful_test"
     test_pattern:
-      - spec/controllers/comments_controller_spec.rb
+      - spec/controllers/*_spec.rb
   second:
-    script: "/usr/local/repos/successful_test"
+    #script: "/usr/local/repos/successful_test"
     test_pattern:
-      - spec/routing/root_route_spec.rb
+      - spec/routing/*_spec.rb
   third:
-    script: "/usr/local/repos/successful_test"
+    #script: "/usr/local/repos/successful_test"
     test_pattern:
-      - spec/features/tasks/editTaskText_spec.rb
-  fourth:
-    script: "/usr/local/repos/successful_test"
-  fifth:
-    script: "/usr/local/repos/successful_test"
-  six:
-    script: "/usr/local/repos/successful_test"
-  seventh:
-    script: "/usr/local/repos/successful_test"
-  eight:
-    script: "/usr/local/repos/successful_test"
-  nine:
-    script: "/usr/local/repos/successful_test"
-  ten:
-    script: "/usr/local/repos/successful_test"
-  eleven:
-    script: "/usr/local/repos/successful_test"
-  twelve:
-    script: "/usr/local/repos/successful_test"
-  thirteen:
-    script: "/usr/local/repos/successful_test"
-  fourteen:
-    script: "/usr/local/repos/successful_test"
-  fifteen:
-    script: "/usr/local/repos/successful_test"
-  a:
-    script: "/usr/local/repos/successful_test"
-  b:
-    script: "/usr/local/repos/successful_test"
-  c:
-    script: "/usr/local/repos/successful_test"
-  e:
-    script: "/usr/local/repos/successful_test"
+      - spec/features/tasks/*_spec.rb
