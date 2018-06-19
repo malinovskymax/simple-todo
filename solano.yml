@@ -9,7 +9,7 @@ firefox: '31.0esr'
 pipeline:
   default:
     second: third
-steps:
+profiles:
   default:
     #script: "/usr/local/repos/successful_test"
     test_pattern:
