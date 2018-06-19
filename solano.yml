@@ -7,8 +7,9 @@ postgresql:
 firefox: '31.0esr'
 
 plan:
-  default:
-    second: third
+  - default
+  - second
+  - third
 profiles:
   default:
     script: "/usr/local/repos/successful_test"
