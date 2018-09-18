@@ -2,7 +2,7 @@
 # bundler_version: 1.12.2
 
 # postgresql:
-  version: '9.3'
+#   version: '9.3'
 
 # firefox: '31.0esr'
 
