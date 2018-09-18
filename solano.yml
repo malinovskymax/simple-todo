@@ -20,6 +20,6 @@ steps:
 #     test_pattern:
 #       - spec/routing/*_spec.rb
   third:
-    script: pwd
+    script: ls
 #     test_pattern:
 #       - spec/features/tasks/*_spec.rb
