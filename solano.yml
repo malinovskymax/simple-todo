@@ -16,10 +16,10 @@ steps:
 #     test_pattern:
 #       - spec/controllers/*_spec.rb
   second:
-    script: 
+    script: successful_test
 #     test_pattern:
 #       - spec/routing/*_spec.rb
   third:
-    script: "pwd"
+    script: pwd
 #     test_pattern:
 #       - spec/features/tasks/*_spec.rb
