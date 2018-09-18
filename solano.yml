@@ -12,14 +12,14 @@ pipeline:
   - third
 steps:
   default:
-    script: "/usr/local/repos/successful_test"
+    script: successful_test
 #     test_pattern:
 #       - spec/controllers/*_spec.rb
   second:
-    script: "/usr/local/repos/successful_test"
+    script: 
 #     test_pattern:
 #       - spec/routing/*_spec.rb
   third:
-    script: "/usr/local/repos/successful_test"
+    script: "pwd"
 #     test_pattern:
 #       - spec/features/tasks/*_spec.rb
