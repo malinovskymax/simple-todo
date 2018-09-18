@@ -36,7 +36,7 @@ group :development, :test do
   gem 'database_cleaner'
   # Detecting N+1 query problems
   gem 'bullet'
-
+  gem 'puma'
 end
 
 group :production do
