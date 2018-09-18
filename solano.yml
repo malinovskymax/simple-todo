@@ -12,14 +12,14 @@ pipeline:
   - third
 steps:
   default:
-    script: successful_test
+    script: ~/predixci/successful_test
 #     test_pattern:
 #       - spec/controllers/*_spec.rb
   second:
-    script: successful_test
+    script: ./successful_test
 #     test_pattern:
 #       - spec/routing/*_spec.rb
   third:
-    script: ls
+    script: ls && pwd
 #     test_pattern:
 #       - spec/features/tasks/*_spec.rb
