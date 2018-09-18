@@ -1,10 +1,10 @@
-# ruby_version: ruby-2.3.1
-# bundler_version: 1.12.2
+ruby_version: ruby-2.3.1
+bundler_version: 1.12.2
 
-# postgresql:
-#   version: '9.3'
+postgresql:
+  version: '9.3'
 
-# firefox: '31.0esr'
+firefox: '31.0esr'
 
 pipeline:
   - default
@@ -12,14 +12,14 @@ pipeline:
   - third
 steps:
   default:
-    script: ./successful_test
-#     test_pattern:
-#       - spec/controllers/*_spec.rb
+#     script: ./successful_test
+    test_pattern:
+      - spec/controllers/*_spec.rb
   second:
-    script: ./successful_test
-#     test_pattern:
-#       - spec/routing/*_spec.rb
+#     script: ./successful_test
+    test_pattern:
+      - spec/routing/*_spec.rb
   third:
-    script: ./successful_test
-#     test_pattern:
-#       - spec/features/tasks/*_spec.rb
+#     script: ./successful_test
+    test_pattern:
+      - spec/features/tasks/*_spec.rb
